@@ -22,9 +22,8 @@ class SearchForm extends Component {
                     <input
                         onChange={this.onChange}
                         type="text"
-                        placeholder="type text"
+                        placeholder="type text and press 'Enter'"
                     />
-                    <div className="button">search</div>
                 </form>
             </div>
         )

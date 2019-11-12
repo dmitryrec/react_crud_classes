@@ -1,6 +1,8 @@
 .moviesContainer {
     display: flex;
+    flex-direction: column;
     width: 900px;
-    border: 1px solid;
     margin: 0 auto;
+    justify-content: center;
+    text-align: center;    
 }
