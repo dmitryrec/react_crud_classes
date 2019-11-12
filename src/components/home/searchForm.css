@@ -1,13 +1,15 @@
 .formcontainer {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px #000000;
     border-radius: 5px;
     width: 50vw;
     margin: 30px auto;
     padding: 30px 0px;
     justify-content: center;
     align-items: center;
+    background: #6d7ca5;
+    color: white;
 }
 
 .formheader {
@@ -16,7 +18,7 @@
 }
 
 .button {
-    background: #000000;
+    background: #002486;
     color: #ffffff;
     border-radius: 5px;
     padding: 10px;
