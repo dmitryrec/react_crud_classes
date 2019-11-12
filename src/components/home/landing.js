@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import SearchForm from './searchForm';
+import { connect } from 'react-redux';
 
-export default class Landing extends Component {
+import Loading from '../loading';
+import MoviesContainer from '../movies-container';
+
+
+class Landing extends Component {
     render() {
+        const {loading} = this.props;
+
         return (
             <div>
                 <SearchForm/>
+                {loading ? <Loading/> : <MoviesContainer/>}
             </div>
         )
     }
 }
+
+const mapStateToProps = state => ({
+    loading: state.movies.loading
+})
+
+export default connect(mapStateToProps)(Landing)

@@ -1,0 +1,6 @@
+.moviesContainer {
+    display: flex;
+    width: 900px;
+    border: 1px solid;
+    margin: 0 auto;
+}
