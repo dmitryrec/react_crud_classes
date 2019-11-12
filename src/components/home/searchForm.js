@@ -1,14 +1,31 @@
 import React, { Component } from 'react';
-import './searchForm.css'
+import './searchForm.css';
+import { connect } from 'react-redux';
+import { searchMovie } from '../../actions/searchActions'
 
-export default class SearchForm extends Component {
+class SearchForm extends Component {
+
+    onChange = e => {
+        this.props.searchMovie(e.target.value)
+    }
+
     render() {
         return (
             <div className="formcontainer">
                 <h2 className="formheader">Search movie</h2>
-                <input type="text" placeholder="type text"/>
+                <input
+                    onChange={this.onChange}
+                    type="text"
+                    placeholder="type text"
+                />
                 <div className="button">search</div>
             </div>
         )
     }
 }
+
+const mapStateToProps = state => ({
+    text: state.movies.text
+})
+
+export default connect(mapStateToProps, {searchMovie})(SearchForm)
