@@ -1,0 +1,9 @@
+.navbar {
+    border: 1px solid black;
+    background: #000000;
+    color: #ffffff;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
