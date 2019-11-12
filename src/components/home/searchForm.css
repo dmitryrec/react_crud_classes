@@ -1,13 +1,18 @@
 .formcontainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
     border-radius: 5px;
     width: 50vw;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 30px 0px;
     justify-content: center;
     align-items: center;
+}
+
+.formheader {
+    text-transform: uppercase;
+    margin: 10px;
 }
 
 .button {
