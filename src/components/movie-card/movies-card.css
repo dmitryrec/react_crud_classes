@@ -1,5 +1,8 @@
 .moviesCardItem {
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    background: #6d7ca5;
+    color: white;
 }

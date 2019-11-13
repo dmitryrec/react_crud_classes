@@ -7,7 +7,7 @@ export default class MovieCard extends Component {
         return (
             <div className="moviesCardItem">
                 <h3>{movie.Title}</h3>
-                <img src={movie.Poster}/>
+                <img src={movie.Poster} alt="poster"/>
                 <p>year: {movie.Year}</p>
             </div>
         )
